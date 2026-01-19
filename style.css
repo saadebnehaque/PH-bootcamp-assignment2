@@ -1,4 +1,37 @@
-*{
-    color: white;
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 200px;
+}
+
+.navContainer ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.subscribe-btn {
+    background: linear-gradient(15deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    color: #FFFFFF;
+    padding: 12px 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
 }
