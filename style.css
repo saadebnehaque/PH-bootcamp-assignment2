@@ -223,7 +223,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: ;
+
     gap: 16px;
     padding: 40px;
     border-radius: 40px;
@@ -240,6 +240,115 @@ body {
         line-height: 30px;
         color: #ffffffa2;
     }
+}
+
+/* Featured Episodes Section */
+
+.featuredEpisodesContainer {
+    padding: 120px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.feturedEpisods,
+.meetTheHost {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    h1 {
+        font-size: 48px;
+    }
+}
+
+.featuredCardContainer {
+    display: flex;
+    gap: 30px;
+}
+
+.featuredCard {
+    border-radius: 24px;
+    background-color: #250D44;
+    max-width: 380px;
+
+}
+
+.featureText {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        color: #ffffffa2;
+        line-height: 30px;
+    }
+}
+
+.duration {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    color: #00FF88;
+
+    .durImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.meetTheHostContent {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 40px;
+    border-radius: 40px;
+    background: #35116566;
+}
+
+.hostTextOrSocial {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hostText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h3 {
+        font-size: 32px;
+
+    }
+
+    p {
+        color: #ffffffa2;
+        line-height: 30px;
+    }
+}
+
+.hostSocial {
+    display: flex;
+    gap: 8px;
+
+}
+
+.hostSocialLinks {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #533C72;
+    border-radius: 50%;
 }
 
 /* responsive */
