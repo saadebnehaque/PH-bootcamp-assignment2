@@ -135,43 +135,110 @@ body {
 /* About Section */
 
 
-.aboutContainer{
+.aboutContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 80px;
     padding: 50px 200px 120px;
 }
-.aboutText{
+
+.aboutText {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 16px;
-    h1{
+
+    h1 {
         font-size: 48px;
         font-weight: bold;
 
-    }p{
+    }
+
+    p {
         line-height: 30px;
         font-weight: 400;
+        color: #ffffffa2;
     }
 }
-.statisticsContainer{
+
+.statisticsContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
 }
-.statistics{
+
+.statistics {
     display: flex;
     flex-direction: column;
     gap: 16px;
     text-align: center;
     align-items: center;
-    h1{
+
+    h1 {
         font-size: 48px;
         font-weight: 900;
         letter-spacing: 1.5px;
         color: #00ff88;
+    }
+
+    p {
+        color: #ffffffa2;
+    }
+}
+
+/* Why Choose Section */
+
+.whyChooseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 120px 200px;
+    background: #230E3D;
+
+    h1 {
+        font-size: 48px;
+
+    }
+}
+
+.whyChooseCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.whyChooseCard {
+    background: #35116566;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: ;
+    gap: 16px;
+    padding: 40px;
+    border-radius: 40px;
+
+    .img {
+        max-width: 60px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        line-height: 30px;
+        color: #ffffffa2;
     }
 }
 
