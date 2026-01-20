@@ -10,11 +10,14 @@ body {
     color: #FFFFFF;
 }
 
+/* nav bar */
+
 .navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 200px;
+    border-bottom: 1px solid #412567;
 }
 
 .navContainer ul {
@@ -23,7 +26,7 @@ body {
     gap: 32px;
 }
 
-.subscribe-btn {
+.btn {
     background: linear-gradient(15deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
     color: #FFFFFF;
     padding: 12px 16px;
@@ -35,3 +38,98 @@ body {
     border-radius: 50px;
     cursor: pointer;
 }
+
+/* banner */
+
+.bannerConrainer {
+
+    background: url(./assets/hero-bg.png) no-repeat center;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bannerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.bannerCircle {
+    height: 350px;
+    width: 350px;
+    background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    border: 8px solid #2A186C;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    background-color: #00ff88;
+    color: #1A0B2E;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 27px 0 #00ff8880;
+    text-transform: uppercase;
+
+}
+
+.bannerTextOrBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.bannerText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h1 {
+        font-weight: 800;
+        font-size: 60px;
+    }
+
+    p {
+        color: #fafafa;
+        font-weight: 400;
+    }
+}
+
+.bannerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.buttonBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-weight: 600;
+}
+
+/* responsive */
