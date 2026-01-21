@@ -3,9 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+
 }
 
+.banFont {
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+p {
+    color: #ffffffa2;
+    line-height: 30px;
+}
+
+/* -------------------- */
 body {
+    margin: 0 auto;
     background-color: #1A0B2E;
     color: #FFFFFF;
 }
@@ -37,6 +49,10 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+}
+
+.menuIcon {
+    display: none;
 }
 
 /* banner */
@@ -86,6 +102,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 3px 27px 0 #00ff8880;
     text-transform: uppercase;
+    animation: kapakapi 2s infinite ease-in-out;
 
 }
 
@@ -105,11 +122,6 @@ body {
     h1 {
         font-weight: 800;
         font-size: 60px;
-    }
-
-    p {
-        color: #fafafa;
-        font-weight: 400;
     }
 }
 
@@ -154,18 +166,13 @@ body {
         font-weight: bold;
 
     }
-
-    p {
-        line-height: 30px;
-        font-weight: 400;
-        color: #ffffffa2;
-    }
 }
 
 .statisticsContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 80px;
+    align-items: center;
+    justify-content: center;
 }
 
 .statistics {
@@ -180,10 +187,6 @@ body {
         font-weight: 900;
         letter-spacing: 1.5px;
         color: #00ff88;
-    }
-
-    p {
-        color: #ffffffa2;
     }
 }
 
@@ -205,8 +208,7 @@ body {
 
 .whyChooseCardContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
 
@@ -236,10 +238,7 @@ body {
         font-size: 24px;
     }
 
-    p {
-        line-height: 30px;
-        color: #ffffffa2;
-    }
+
 }
 
 /* Featured Episodes Section */
@@ -273,6 +272,12 @@ body {
     background-color: #250D44;
     max-width: 380px;
 
+}
+
+.vid {
+    border-radius: 24px 24px 0 0;
+    height: 214px;
+    width: 380px;
 }
 
 .featureText {
@@ -319,6 +324,11 @@ body {
     gap: 16px;
 }
 
+.hostImg img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
 .hostText {
     display: flex;
     flex-direction: column;
@@ -329,10 +339,7 @@ body {
 
     }
 
-    p {
-        color: #ffffffa2;
-        line-height: 30px;
-    }
+
 }
 
 .hostSocial {
@@ -351,4 +358,285 @@ body {
     border-radius: 50%;
 }
 
+/* footer */
+footer {
+    height: 412px;
+    background: url(./assets/footer-bg.png) no-repeat center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    p {
+        letter-spacing: 1px;
+    }
+}
+
+.footSocialLinks {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footSocial {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* hover */
+
+.lafalafiHov:hover {
+    cursor: pointer;
+    animation: lafalafi 0.5s ease-in-out;
+}
+.potiHov:hover{
+    animation: polti 1.5s ease-out;
+}
+/* animation */
+
+@keyframes polti {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes kapakapi {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+    }
+
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(0, 255, 136, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+    }
+}
+
+@keyframes lafalafi {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    75% {
+        transform: translateX(5px) rotate(5deg);
+    }
+}
+
 /* responsive */
+
+
+
+@media screen and (max-width: 992px) {
+    .navContainer {
+        padding: 16px 20px;
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .aboutContainer {
+        padding: 50px 60px 120px;
+    }
+
+    .statisticsContainer {
+        gap: 40px;
+        flex-wrap: wrap;
+
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    .whyChooseContainer {
+        padding: 60px;
+
+    }
+
+    .whyChooseCardContainer {
+        gap: 16px;
+    }
+
+    .whyChooseCard {
+        padding: 24px;
+
+    }
+
+    .featuredEpisodesContainer {
+        padding: 60px;
+
+        h1 {
+            h1 {
+                font-size: 48px;
+                text-align: center;
+            }
+
+            text-align: center;
+        }
+    }
+
+    .featuredCardContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .meetTheHostContent {
+        padding: 24px;
+    }
+
+    footer {
+        background-position: center;
+        padding: 24px;
+
+    }
+
+    .footSocialLinks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .menuNav {
+        display: none;
+    }
+
+    .bannerConrainer {
+        height: 466px;
+        background: url(./assets/hero-bg.png) no-repeat center center / cover;
+    }
+
+    .bannerContent {
+        margin-top: 60px;
+    }
+
+    .bannerCircle {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .bannerContent {
+        gap: 24px;
+    }
+
+    .bannerCircle>img {
+        max-width: 80px;
+    }
+
+    .badge {
+        top: 4px;
+        right: 0px;
+    }
+
+    .bannerBtn {
+        flex-wrap: wrap;
+    }
+
+    .aboutContainer {
+        padding: 40px 20px;
+
+        h1 {
+            font-size: 32px;
+            text-align: center;
+        }
+    }
+
+    .statisticsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .whyChooseContainer {
+        padding: 40px;
+
+        h1 {
+            font-size: 32px;
+            text-align: center;
+        }
+    }
+
+    .whyChooseCardContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featuredEpisodesContainer {
+        h1 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .meetTheHostContent {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .hostSocial {
+        justify-content: center;
+    }
+
+    footer {
+        height: 248px;
+        background: url(./assets/footer-bg.png) no-repeat center center;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footLogo img {
+        width: 220px;
+    }
+
+    .footSocialLinks {
+        transform: scale(80%);
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+
+    }
+
+    .footSocial {
+        align-items: center;
+    }
+}

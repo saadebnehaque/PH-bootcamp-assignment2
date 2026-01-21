@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Wave</title>
-
-
-    <link rel="shortcut icon" href="./assets/hero-circle.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -24,15 +22,20 @@
         <div class="navLogo">
             <img src="./assets/TechWave-logo.svg" alt="Tech Wave Logo">
         </div>
-        <ul class="navMenu">
-            <li>About</li>
-            <li>Episodes</li>
-            <li>Host</li>
-        </ul>
+        <div class="menuNav">
+            <ul>
+                <li>About</li>
+                <li>Episodes</li>
+                <li>Host</li>
+            </ul>
+        </div>
         <div class="navBtn">
-            <button class="btn"><span class="text">Subscribe</span>
+            <button class="btn lafalafiHov"><span class="text">Subscribe</span>
                 <img src="./assets/right-arrow.svg" alt="" class="arrow">
             </button>
+        </div>
+        <div class="menuIcon">
+            <img src="./assets/hamburger-menu.png" alt="">
         </div>
     </nav>
 
@@ -50,13 +53,13 @@
                     <h1>TechWave</h1>
                     <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
                 </div>
-                <div class="bannerBtn">
-                    <button class="buttonBanner"
+                <div class="bannerBtn ">
+                    <button class="buttonBanner lafalafiHov"
                         style="background: linear-gradient(1450deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);">
                         <img src="./assets/spotify.png" alt="">
                         Listen on Spotify
                     </button>
-                    <button class="buttonBanner"
+                    <button class="buttonBanner lafalafiHov"
                         style="background: transparent; border: 1px solid #00FF88; color: #00FF88;">
                         <img src="./assets/message.png" alt="">
                         Subscribe
@@ -145,49 +148,60 @@
             <div class="featuredCardContainer">
                 <div class="featuredCard">
                     <div class="featureVid">
-                        <iframe width="380px" height="214px" src="https://www.youtube.com/embed/pHVtXhRHMa8?si=aspAcMT0UIivLlEi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-top: 24px;"></iframe>
+                        <iframe class="vid" src="https://www.youtube.com/embed/faxoBJdsfMc?si=ZC8VIkdZLjczXBcK"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="featureText">
-                        <h3>The Future of AI in Everyday Life</h3>
-                        <p>Exploring how artificial intelligence is transforming our daily routines and what to expect
-                            in the next decade.</p>
+                        <h3><span class="banFont">একজন মুসলিম সফটওয়্যার ইঞ্জিনিয়ারের ক্যারিয়ার, ধর্ম ও লাইফ
+                                ব্যালেন্স</span>|Jhankar Mahbub</h3>
+                        <p class="banFont">মেটার সাবেক ইঞ্জিনিয়ার ওমর আল জাবিরের অভিজ্ঞতায় মুসলিম হিসেবে টেক
+                            ক্যারিয়ার, ধর্ম ও কর্মজীবন সামলানোর কার্যকর পডকাস্ট দিকনির্দেশনা।</p>
                         <div class="duration">
                             <div class="durImg">
                                 <img src="./assets/clock.png" alt="">
                             </div>
-                            42 min
+                            1:10:57 hr
                         </div>
                     </div>
                 </div>
                 <div class="featuredCard">
                     <div class="featureVid">
-                        <img src="./assets/feature.png" alt="" class="featuteFrame">
+                        <iframe class="vid" src="https://www.youtube.com/embed/dwAek2T-Oc4?si=Uw5bRulHFCM60288"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="featureText">
-                        <h3>Building Better Habits for Remote Work</h3>
-                        <p>Practical strategies for staying productive and maintaining work-life balance in a remote
-                            environment..</p>
+                        <h3>Education Trap: <span class="banFont">আমরা আসলে কী শিখছি?</span>|Jhankar Mahbub</h3>
+                        <p class="banFont">ঝংকার মাহবুবের আলোচনায় শিক্ষা ব্যবস্থার সীমাবদ্ধতা কাটিয়ে বাস্তব অভিজ্ঞতা ও
+                            'What Next Methodology' দিয়ে ক্যারিয়ারে সফল হওয়ার কার্যকর দিকনির্দেশনা।</p>
                         <div class="duration">
                             <div class="durImg">
                                 <img src="./assets/clock.png" alt="">
                             </div>
-                            35 min
+                            0:52:13 hr
                         </div>
                     </div>
                 </div>
                 <div class="featuredCard">
                     <div class="featureVid">
-                        <img src="./assets/feature.png" alt="" class="featuteFrame">
+                        <iframe class="vid" src="https://www.youtube.com/embed/mlVpV5YB0YE?si=rPfcio3Ny8Kg4Xpc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="featureText">
-                        <h3>Career Growth in Tech: A Roadmap</h3>
-                        <p>Expert advice on navigating your tech career from junior developer to senior leadership
-                            roles.p>
+                        <h3><span class="banFont">দক্ষ হওয়ার ৩ সিক্রেট</span>|UI/UX Career <span
+                                class="banFont">গাইডলাইন</span>|Jhankar Mahbub</h3>
+                        <p class="banFont">মুশতাক আহমেদের ২৩ বছরের অভিজ্ঞতায় UI/UX ক্যারিয়ার গড়া, নতুন কিছু শেখা এবং সফল
+                            হওয়ার পূর্ণাঙ্গ পডকাস্ট গাইডলাইন।</p>
                         <div class="duration">
                             <div class="durImg">
                                 <img src="./assets/clock.png" alt="">
                             </div>
-                           51 min
+                            1:14:44 hr
                         </div>
                     </div>
                 </div>
@@ -196,36 +210,75 @@
         <div class="meetTheHost">
             <h1>Meet the Host</h1>
             <div class="meetTheHostContent">
-                <div class="hostImg">
+                <div class="hostImg potiHov">
                     <img src="./assets/host.png" alt="">
                 </div>
                 <div class="hostTextOrSocial">
                     <div class="hostText">
-                        <h3>Alex Kumar</h3>
-                        <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech
-                            industry for over 10 years, working with startups and Fortune 500 companies. Through
-                            TechWave, Alex shares insights from industry leaders and practical advice for anyone looking
-                            to grow in tech.</p>
+                        <a href="https://www.jhankarmahbub.com/" target="_blank"
+                            style="text-transform: capitalize; color: white; text-decoration: none;">
+                            <h3>jhankar mahbub</h3>
+                        </a>
+                        <p>Jhankar Mahbub is a prominent Bengali tech educator known for his fun, simple teaching style.
+                            He has inspired countless Bengali speakers worldwide by making programming and software
+                            engineering easy, engaging, and accessible for everyone.</p>
                     </div>
                     <div class="hostSocial">
-                        <div class="hostSocialLinks">
-                            <img src="./assets/linkedin.png" alt="">
-                        </div>
-                        <div class="hostSocialLinks">
-                            <img src="./assets/x.png" alt="">
-                        </div>
-                        <div class="hostSocialLinks">
-                            <img src="./assets/instagram.png" alt="">
-                        </div>
-                        <div class="hostSocialLinks">
-                            <img src="./assets/youtube.png" alt="">
-                        </div>
+                        <a href="https://www.linkedin.com/in/jhankar/" target="_blank">
+                            <div class="hostSocialLinks">
+                                <img src="./assets/linkedin.png" alt="">
+                            </div>
+                        </a>
+                        <a href="https://x.com/jhankar_mahbub" target="_blank">
+                            <div class="hostSocialLinks">
+                                <img src="./assets/x.png" alt="">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/jhankarmahbub/" target="_blank">
+                            <div class="hostSocialLinks">
+                                <img src="./assets/instagram.png" alt="">
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/@JhankarMahbub" target="_blank">
+                            <div class="hostSocialLinks">
+                                <img src="./assets/youtube.png" alt="">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footContainer">
+            <div class="footLogo">
+                <img src="./assets/footer-TechWave-logo.svg" alt="">
+            </div>
+            <div class="footSocialLinks">
+                <div class="footSocial">
+                    <img src="./assets/footSpotify.png" alt="">
+                    <span>Spotify</span>
+                </div>
+                <div class="footSocial">
+                    <img src="./assets/apple-podcast.png" alt="">
+                    <span>Apple Podcasts</span>
+                </div>
+                <div class="footSocial">
+                    <img src="./assets/youtube-podcast.png" alt="">
+                    <span>YouTube</span>
+                </div>
+                <div class="footSocial">
+                    <img src="./assets/twitter.png" alt="">
+                    <span>Twitter</span>
+                </div>
+            </div>
+            <p>© 2026 TechWave Podcast. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 
