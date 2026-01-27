@@ -264,7 +264,10 @@ body {
 
 .featuredCardContainer {
     display: flex;
+   
     gap: 30px;
+    
+    justify-content: center;
 }
 
 .featuredCard {
@@ -638,5 +641,10 @@ footer {
 
     .footSocial {
         align-items: center;
+    }
+}
+@media screen and (max-width:1220px) {
+    .featuredCardContainer{
+        flex-wrap: wrap;
     }
 }
